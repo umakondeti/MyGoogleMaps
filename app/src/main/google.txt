@@ -1,0 +1,40 @@
+umakondeti96@gmail.com
+
+
+
+project id: summer-function-119408
+
+sha1 key: D8:B5:6D:3B:2F:DF:E6:C4:B2:79:2A:CD:4F:21:9F:B7:66:03:32:C8
+
+api key: AIzaSyDVYazFBeMGVysc5AENrRc5-MiKezlMCUg
+
+keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+----------------------------------------------------------------------------------------------------------------------------------------
+facebook
+------------------------------------------------------------------------------------------
+kondetiuma@gmail.com
+
+keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore | openssl sha1 -binary | openssl base64
+
+
+keytool -exportcert -alias androiddebugkey -keystore C:\Users\UmaMaheshwari\.android\debug.keystore | "C:\Program Files\openssl-0.9.8k_X64\bin\openssl.exe" sha1 -binary | "C:\Program Files\openssl-0.9.8k_X64\bin\openssl.exe" base64
+
+keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+
+fb hash key: zQJFnt+l5pjDIMtkDdAVVg4Pdvk=
+ 
+AppId: 176817519344304
+
+App version: v2.5
+
+App Secret: ac0bd7d1b3562fa079f0b48d7d3eac8e
+-------------------------------------------------------------------------------------------------------------------
+Google plus
+----------------------------------------------------------------------------------------------------------------------------
+Project id: airy-runway-116115
+ 
+project Number : 223999693768
+
+ sha1 key: D8:B5:6D:3B:2F:DF:E6:C4:B2:79:2A:CD:4F:21:9F:B7:66:03:32:C8
+
+client Id: 223999693768-s34mhuqjrjf0kt7gdu1bgic9rp4f1tqh.apps.googleusercontent.com

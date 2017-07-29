@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_bg">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/back_arrow"
+            style="@style/contacts_back_arrow"/>
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/profile_text_color"
+            android:textSize="@dimen/profile_size"
+            style="@style/profile_style"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/llv_menu_style">
+        <com.example.umamaheshwari.mygooglemaps.CircularImageView
+            android:id="@+id/iv_pic"
+            style="@style/pic_style"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llv_fb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        style="@style/profile_pic_margin">
+        <LinearLayout
+            android:id="@+id/llv_fb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/llv_first_style"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/first_name"
+                android:gravity="center"
+                android:textSize="@dimen/email_size"
+                android:textColor="@android:color/black"
+                style="@style/llv_firstname_style"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_fname"
+                    style="@style/profile_name"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/first_name"
+                    android:textSize="@dimen/fname_size"
+                    android:gravity="center"
+                    android:background="@drawable/firstname_corners"
+                    android:layout_alignParentRight="true"
+                    android:inputType="text"/>
+            </RelativeLayout>
+
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llv_fb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/llv_first_style"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/last_name"
+                android:gravity="center"
+                android:textSize="@dimen/email_size"
+                android:textColor="@android:color/black"
+                style="@style/id"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_lname"
+                    style="@style/ed_paddingfirst"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/last_name"
+                    android:textSize="@dimen/fname_size"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/firstname_corners"
+                    android:inputType="text"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llv_fb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/llv_first_style"
+            android:gravity="center_horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/email"
+                android:gravity="center"
+                android:textSize="@dimen/email_size"
+                android:textColor="@android:color/black"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_femail"
+                    style="@style/ed_paddingemails"
+                    android:textColor="@android:color/black"
+                    android:hint="@string/email"
+                    android:textSize="@dimen/fname_size"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/firstname_corners"
+                    android:gravity="center"
+                    android:inputType="text"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

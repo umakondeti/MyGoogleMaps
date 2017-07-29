@@ -1,0 +1,74 @@
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+  <!--  &lt;!&ndash;   first screen&ndash;&gt;
+
+    <style name="title_gap">
+
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:textSize">60sp</item>
+
+
+    </style>
+
+    <style name="fb_login_style">
+
+    <item name="android:height">50dp</item>
+
+    <item name="android:layout_marginBottom">20dp</item>
+
+    <item name="android:layout_marginLeft">30dp</item>
+
+    <item name="android:layout_marginRight">30dp</item>
+
+    <item name="android:layout_height">80dp</item>
+
+    </style>
+
+    <style name="google_signin_style">
+
+        <item name="android:layout_height">80dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+        <item name="android:layout_marginLeft">30dp</item>
+
+        <item name="android:layout_marginRight">30dp</item>
+
+
+    </style>
+    &lt;!&ndash; second screen&ndash;&gt;
+
+
+
+<style name="viewpager_height">
+
+<item name="android:layout_height">600dp</item>
+
+</style>
+
+<style name="circles">
+
+<item name="android:layout_marginBottom">30dp</item>
+
+</style>
+
+    <style name="tv_home_style">
+
+        <item name="android:layout_height">80dp</item>
+
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginBottom">10dp</item>
+
+
+    </style>
+-->
+</resources>

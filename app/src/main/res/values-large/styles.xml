@@ -1,0 +1,677 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="dialog_animation">
+
+        <item name="android:windowEnterAnimation">@anim/dialog_start_animation</item>
+
+        <item name="android:windowExitAnimation">@anim/dialog_end_anim</item>
+
+    </style>
+
+    <style name="tv_list_item_pstyles">
+
+        <item name="android:textSize">35sp</item>
+
+        <item name="android:layout_marginTop">15dp</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_marginRight">22dp</item>
+
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+    <style name="tv_list_item_styles">
+
+        <item name="android:textSize">35sp</item>
+
+        <item name="android:layout_marginTop">9dp</item>
+
+        <item name="android:layout_marginLeft">15dp</item>
+
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+    <style name="tv_list_item_logstyles">
+
+        <item name="android:textSize">35sp</item>
+
+        <item name="android:layout_marginTop">9dp</item>
+
+        <item name="android:layout_marginLeft">40dp</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+    <style name="messages_styles">
+
+        <item name="android:layout_marginLeft">5dp</item>
+
+        <item name="android:textSize">35sp</item>
+
+        <item name="android:layout_marginTop">9dp</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+    <style name="location_history">
+
+        <item name="android:layout_width">50dp</item>
+
+        <item name="android:layout_height">65dp</item>
+
+        <item name="android:layout_marginLeft">8dp</item>
+
+    </style>
+
+
+    <style name="tv_list_item_hstyles">
+
+        <item name="android:textSize">35sp</item>
+
+        <item name="android:layout_marginTop">5dp</item>
+
+
+        <item name="android:layout_marginRight">15dp</item>
+
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+    <style name="login_button_style">
+
+        <item name="android:height">30dp</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">20dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+    </style>
+    <style name="logout_image_style">
+
+        <item name="android:layout_width">55dp</item>
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_marginTop">5dp</item>
+
+        <item name="android:layout_height">65dp</item>
+
+    </style>
+
+    <style name="title_gap">
+
+        <item name="android:layout_marginTop">50dp</item>
+
+    </style>
+
+    <style name="subquote_title_gap">
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginTop">30dp</item>
+
+    </style>
+
+
+    <style name="signin_button_style">
+
+        <item name="android:height">40dp</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">20dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+    </style>
+
+    <style name="slide_icon_height_width">
+
+        <item name="android:layout_height">60dp</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">20dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+    </style>
+
+
+    <style name="main_menu_style">
+
+        <item name="android:layout_margin">4dp</item>
+
+    </style>
+
+    <style name="signin_style">
+
+        <item name="android:height">50dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">20dp</item>
+
+
+    </style>
+    <style name="google_signin_style">
+
+        <item name="android:layout_height">80dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">20dp</item>
+
+
+    </style>
+    <style name="menu_layout">
+        <item name="android:layout_width">300dp</item>
+
+    </style>
+    <style name="llv_profile_style">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+
+    </style>
+    <style name="llv_contacts_style">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+
+    </style>
+
+    <style name="messages">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">65dp</item>
+
+
+    </style>
+
+    <style name="image_profile_style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_height">60dp</item>
+
+
+    </style>
+
+    <style name="image_contacts_style">
+        <item name="android:layout_width">50dp</item>
+
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+
+
+    </style>
+
+    <style name="view_style">
+
+        <item name="android:layout_height">1dp</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+
+    </style>
+
+
+    <style name="login_style">
+
+        <item name="android:height">34dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">20dp</item>
+
+    </style>
+
+
+    <style name="fb_login_style">
+
+        <item name="android:height">34dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">20dp</item>
+
+        <item name="android:layout_height">85dp</item>
+
+
+
+
+    </style>
+
+
+    <style name="tv_home_style">
+
+        <item name="android:layout_height">80dp</item>
+
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+
+    </style>
+
+    <style name="iv_arrow_paddingfirst">
+
+        <item name="android:layout_margin">10dp</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+
+    </style>
+
+    <style name="intropage_text_style">
+
+        <item name="android:layout_margin">10dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+
+
+    </style>
+
+    <style name="iv_arrowhome_paddingfirst">
+
+        <item name="android:layout_height">40dp</item>
+
+        <item name="android:layout_margin">10dp</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+
+
+
+    </style>
+    <style name="viewpager_height">
+
+        <item name="android:layout_height">600dp</item>
+
+    </style>
+
+    <style name="circles">
+
+        <item name="android:layout_marginBottom">15dp</item>
+
+    </style>
+
+
+
+    <style name="contacts_back_arrow">
+        
+        <item name="android:padding">10dp</item>
+        
+        <item name="android:layout_height">80dp</item>
+        
+        <item name="android:layout_width">80dp</item>
+
+    </style>
+
+    <style name="profile_pic_margin">
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="menu_icon">
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_width">60dp</item>
+
+        <item name="android:layout_height">90dp</item>
+
+        <item name="android:layout_margin">5dp</item>
+
+        <item name="android:layout_marginBottom">5dp</item>
+        
+    </style>
+    <style name="datepicker_style">
+
+        <item name="android:layout_marginLeft">60dp</item>
+
+    </style>
+
+    <style name="history_menu_icon">
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_width">50dp</item>
+
+        <item name="android:layout_height">50dp</item>
+
+        <item name="android:layout_margin">10dp</item>
+
+        <item name="android:layout_marginBottom">0dp</item>
+
+    </style>
+
+    <style name="rll_menu">
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+
+    </style>
+
+    <style name="back_arrow">
+
+
+        <item name="android:layout_margin">10dp</item>
+
+
+
+
+    </style>
+
+    <style name="tv_combine_positionfirst">
+
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="iv_icon_paddingfirst">
+
+        <item name="android:padding">20dp</item>
+
+    </style>
+
+    <style name="fbrowse_positionfirst">
+
+        <item name="android:layout_margin">4dp</item>
+
+        <item name="android:height">50dp</item>
+
+    </style>
+
+    <style name="ed_paddingfirst">
+        <item name="android:layout_height">70dp</item>
+
+        <item name="android:padding">14sp</item>
+
+        <item name="android:layout_width">350dp</item>
+
+        <item name="android:layout_marginLeft">55dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginTop">3dp</item>
+
+    </style>
+
+    <style name="ed_paddingemails">
+
+        <item name="android:layout_height">70dp</item>
+
+        <item name="android:padding">14sp</item>
+
+        <item name="android:layout_width">350dp</item>
+
+        <item name="android:layout_marginLeft">15dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginTop">3dp</item>
+
+    </style>
+
+    <style name="profile_name">
+
+        <item name="android:layout_height">70dp</item>
+
+        <item name="android:padding">14sp</item>
+
+        <item name="android:layout_width">350dp</item>
+
+        <item name="android:width">200dp</item>
+
+        <item name="android:layout_marginLeft">15dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginTop">3dp</item>
+
+    </style>
+
+    <style name="ed_paddinglink">
+
+        <item name="android:padding">14sp</item>
+
+
+        <item name="android:layout_marginLeft">40dp</item>
+
+        <item name="android:layout_marginRight">1dp</item>
+
+        <item name="android:layout_marginTop">3dp</item>
+
+    </style>
+
+    <style name="ed_paddingemail">
+
+        <item name="android:padding">14sp</item>
+
+        <item name="android:width">200dp</item>
+
+        <item name="android:layout_marginLeft">30dp</item>
+
+        <item name="android:layout_marginRight">1dp</item>
+
+        <item name="android:layout_marginTop">3dp</item>
+
+    </style>
+
+    <style name="f_llv_borderfirst">
+
+        <item name="android:padding">10sp</item>
+
+        <item name="android:width">200dp</item>
+
+    </style>
+
+
+
+    <!--   profile    -->
+
+    <style name="fname_style">
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginBottom">10dp</item>
+
+        <item name="android:textColor">@color/email_text_color</item>
+
+        <item name="android:height">40dp</item>
+
+    </style>
+
+
+    <style name="email_style">
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:textColor">@color/email_text_color</item>
+
+        <item name="android:height">40dp</item>
+
+    </style>
+
+
+
+    <style name="button_style">
+
+        <item name="android:layout_marginLeft">10dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginTop">20dp</item>
+
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+
+    <style name="pic_style">
+
+        <item name="android:layout_width">200dp</item>
+
+        <item name="android:layout_height">220dp</item>
+
+
+        <item name="android:layout_gravity">center</item>
+
+        <item name="android:layout_marginTop">10dp</item>
+
+    </style>
+
+
+    <style name="llv_menu_style">
+
+        <item name="android:layout_marginLeft">40dp</item>
+
+        <item name="android:layout_marginRight">40dp</item>
+
+        <item name="android:layout_marginTop">40dp</item>
+
+    </style>
+
+    <style name="llv_first_style">
+
+        <item name="android:layout_marginLeft">20dp</item>
+
+        <item name="android:layout_marginRight">10dp</item>
+
+
+        <item name="android:layout_marginTop">60dp</item>
+
+    </style>
+    <style name="llv_firstname_style">
+
+        <item name="android:layout_marginLeft">4dp</item>
+
+
+    </style>
+
+    <style name="llv_link_style">
+
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="id">
+
+        <item name="android:layout_marginRight">10dp</item>
+
+        <item name="android:layout_marginLeft">5dp</item>
+
+    </style>
+
+    <style name="contacts_image">
+
+        <item name="android:layout_marginTop">65dp</item>
+
+        <item name="android:layout_marginLeft">30dp</item>
+
+        <item name="android:layout_marginRight">30dp</item>
+
+        <item name="android:layout_width">100dp</item>
+
+        <item name="android:layout_height">150dp</item>
+
+    </style>
+
+    <style name="btn_save">
+
+        <item name="android:layout_marginTop">30dp</item>
+
+        <item name="android:layout_marginLeft">15dp</item>
+
+        <item name="android:layout_marginRight">15dp</item>
+
+        <item name="android:layout_marginBottom">20dp</item>
+
+    </style>
+
+    <style name="llv_email_style">
+
+
+        <item name="android:layout_marginTop">20dp</item>
+
+        <item name="android:layout_marginLeft">5dp</item>
+
+
+    </style>
+
+
+    <style name="profile_style">
+
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_centerInParent">true</item>
+
+    </style>
+
+    <style name="fb_attributes_style">
+
+
+        <item name="android:layout_marginTop">20dp</item>
+
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_bg">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:src="@drawable/back_arrow"
+            style="@style/contacts_back_arrow"/>
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contacts"
+            android:textColor="@color/profile_text_color"
+            android:textSize="@dimen/profile_size"
+            style="@style/profile_style"/>
+
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rll_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.umamaheshwari.mygooglemaps.RoundedImageView
+            android:id="@+id/iv_contacts_circle"
+            android:layout_centerInParent="true"
+            android:src="@drawable/maps"
+            style="@style/contacts_image"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+    <EditText
+        android:id="@+id/ed_contacts_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        style="@style/contacts_image"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        android:hint="Name"
+
+        />
+
+    <EditText
+        android:id="@+id/ed_contacts_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:gravity="center_horizontal"
+        style="@style/contacts_image"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/ed_contacts_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        style="@style/contacts_image"
+        android:hint="Email" />
+    </LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_contacts_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_text_color"
+        android:textSize="@dimen/tv_home"
+        android:background="@drawable/home_border"
+        style="@style/btn_save"
+        android:layout_gravity="center"
+        android:onClick="contactsSubmit"
+        />
+
+</RelativeLayout>
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/lst_contacts1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</menu>
+<!--
+</LinearLayout>-->

@@ -1,0 +1,71 @@
+<resources>
+
+    <string name="app_name">Maps</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="goog_api_keys">AIzaSyDVYazFBeMGVysc5AENrRc5-MiKezlMCUg</string>
+
+
+
+    <string name="facebook_app_id">176817519344304</string>
+
+    <string name="server_client_id">223999693768-7no6rto5nnskc40oma2nlarmri2j957j.apps.googleusercontent.com</string>
+
+    <string name="tv_profile">Profile</string>
+
+    <string name="tv_contacts">Contacts</string>
+
+    <string name="tv_history"> History</string>
+
+    <string name="tv_welcome"><b>Welcome</b></string>
+
+    <string name="tv_to"><b>To</b></string>
+
+    <string name="tv_google"><b>My Google Maps</b></string>
+
+    <string name="tv_subquote"><b>Let\'s we Map you</b></string>
+
+    <string name="tv_messages">Messages</string>
+
+    <string name="tv_logout">Logout</string>
+
+    <string name="btn_fb">Log in with Facebook</string>
+
+    <string name="home">Home</string>
+
+    <string name="screen_namefirst">Home</string>
+
+    <string name="history">History</string>
+    <string name="or">Or</string>
+    <string name="sign_in">SignIn</string>
+
+
+    <!--      profile      -->
+
+    <string name="profile">Profile</string>
+
+    <string name="first_name">Name</string>
+
+    <string name="last_name">Id</string>
+
+    <string name="email">Email</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="display">Display</string>
+
+    <!--  contacts-->
+
+    <string name="contacts">Contacts</string>
+
+    <string name="save">Save</string>
+<!-- alert to caccess the contacts-->
+    <string name="alert_allow_contacts">Allow Google Maps to access your contacts</string>
+    <!-- alert to access location -->
+    <string name="alert_allow_location">Allow Google Maps to access your Location</string>
+    <!-- alert to access the image from gallery -->
+    <string name="alert_allow_gallery">Allow Google Maps to access your Image from Gallery</string>
+    <string name="login_error_title">Error!</string>
+
+</resources>

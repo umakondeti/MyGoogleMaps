@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="You don't have any buddies right now!!"
+    android:textSize="20sp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:layout_above="@+id/llv_add_your_buddies"
+    />
+
+    <LinearLayout
+        android:id="@+id/llv_add_your_buddies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/adds" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Add your Buddies"
+            android:textColor="@color/profile_bg"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <SearchView
+        android:id="@+id/buddies_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_border"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:queryHint="Search your buddies by name...."
+        />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sw_list_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buddies_search_view">
+
+        <ListView
+            android:id="@+id/lv_buddies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:smoothScrollbar="true"
+            android:layout_marginBottom="20dp">
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/btn_add_buddies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Buddies"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/firstname_corners"/>
+    <ProgressBar
+        android:id="@+id/pb_buddies"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        />
+
+</RelativeLayout>

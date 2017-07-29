@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- Editext for Search -->
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_border"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:queryHint="Search...."
+        />
+
+    <!-- ListView -->
+
+    <ListView
+        android:id="@+id/lst_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_contacts"
+        android:layout_below="@+id/search_view"
+        android:background="@drawable/list_back"/>
+
+    <Button
+        android:id="@+id/save_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Contacts"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/firstname_corners"/>
+
+</RelativeLayout>

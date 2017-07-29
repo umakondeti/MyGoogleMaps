@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/rll_home"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/heading_llv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/heading"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/back_arrow"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_combine"
+            style="@style/tv_combine_positionfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select Buddy"
+            android:textColor="@color/profile_text_color"
+            android:textSize="@dimen/screen_namefirst" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading_llv">
+
+        <LinearLayout
+            android:id="@+id/llv_track_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+
+            <RadioGroup
+                android:id="@+id/radio_group_start_stop"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_below="@+id/heading_llv"
+                android:background="#ffff"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <RadioButton
+                    android:id="@+id/rb_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleX="0.75"
+                    android:scaleY="0.75"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Start"
+
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/VerticalLine"
+                    android:layout_width="1dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/profile_bg" />
+
+                <RadioButton
+                    android:id="@+id/rb_stop"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:scaleX="0.75"
+                    android:scaleY="0.75"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Stop"
+                    android:textSize="14sp" />
+
+
+
+
+            </RadioGroup>
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <fragment
+
+                android:id="@+id/map"
+
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:layout_below="@+id/heading_llv"
+
+                tools:layout="@layout/abc_action_menu_item_layout" />
+
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_getting_buddies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+            android:id="@+id/rll_search_buddy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        <EditText
+            android:id="@+id/ed_search_buddy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the email Id whom u want to track"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+         />
+            <Button
+                android:id="@+id/btn_track"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text=" Track"
+                android:layout_below="@+id/ed_search_buddy"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+            />
+        </RelativeLayout>-->
+    <RelativeLayout
+        android:id="@+id/select_buddy_totrack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_below="@+id/heading_llv">
+
+        <SearchView
+            android:id="@+id/user_buddy_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/search_border"
+            android:iconifiedByDefault="false"
+            android:padding="0dp"
+
+            android:queryHint="Search your buddies by name...." />
+
+        <ListView
+            android:id="@+id/listview_buddies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/user_buddy_search_view"
+            android:layout_marginBottom="50dp"
+            android:smoothScrollbar="true"/>
+
+        <Button
+            android:id="@+id/btn_track_my_buddy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/firstname_corners"
+            android:text="Track My Buddy"
+            android:textAllCaps="false" />
+
+        <ProgressBar
+            android:id="@+id/pb_trackmybuddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_getting_buddies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Wait getting your buddies...."
+            android:textColor="@color/profile_bg"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

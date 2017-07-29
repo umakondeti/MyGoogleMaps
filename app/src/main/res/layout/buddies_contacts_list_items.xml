@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        >
+
+        <com.example.umamaheshwari.mygooglemaps.CircularImageView
+            android:id="@+id/ll_circle_imageView"
+            android:src="@drawable/maps"
+            style="@style/circleviewHeightWidth"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/ll_circle_imageView"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_ll_contactname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yuga"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#0b0808"
+                />
+
+            <TextView
+                android:id="@+id/tv_ll_contactnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="95"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:textColor="#0b0808"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

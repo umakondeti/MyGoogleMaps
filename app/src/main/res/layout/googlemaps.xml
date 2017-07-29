@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rll_home"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/heading_llv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/heading">
+        <ImageView
+            android:id="@+id/iv_toggle"
+            android:src="@drawable/menu"
+            style="@style/history_menu_icon"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_combine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_namefirst"
+            android:textColor="@color/profile_text_color"
+            android:textSize="@dimen/screen_namefirst"
+            android:layout_centerInParent="true"
+            style="@style/tv_combine_positionfirst"
+            />
+
+    </RelativeLayout>
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_list_selector"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#ffff"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <RadioButton
+                android:id="@+id/rdoNormal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Normal"
+                android:textSize="13sp"
+                android:scaleX="0.75"
+                android:scaleY="0.75"/>
+
+            <View
+                android:id="@+id/VerticalLine"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/profile_bg" />
+
+            <RadioButton
+                android:id="@+id/rdoHybrid"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Hybrid"
+                android:scaleX="0.75"
+                android:scaleY="0.5"
+                android:textSize="13sp"/>
+
+            <View
+                android:id="@+id/VerticalLine1"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/profile_bg" />
+
+            <RadioButton
+                android:id="@+id/rdoSatellite"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Satellite"
+                android:textSize="13sp"
+                android:scaleX="0.75"
+                android:scaleY="0.75"/>
+
+            <View
+                android:id="@+id/VerticalLine2"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@color/profile_bg" />
+
+            <RadioButton
+                android:id="@+id/rdoTerrain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Terrain"
+                android:textSize="13sp"
+                android:scaleX="0.75"
+                android:scaleY="0.75"/>
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/profile_bg"
+            android:layout_below="@+id/radio_group_list_selector"/>
+
+    <fragment
+
+        android:id="@+id/map"
+
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/heading_llv"
+
+         />
+
+    <!--<ImageView
+
+
+        android:id="@+id/iv_click"
+
+        android:src="@drawable/menu_icon"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+
+        style="@style/slide_icon_height_width"
+
+        android:layout_width="wrap_content" />-->
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/profile_bg"
+        android:layout_above="@+id/bottom_menu"/>
+   <LinearLayout
+       android:id="@+id/bottom_menu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:weightSum="4"
+       android:background="@android:color/white"
+       android:layout_alignParentBottom="true">
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center">
+           <ImageView
+               android:layout_width="34dp"
+               android:layout_height="34dp"
+               android:src="@drawable/profile"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:text="Home"/>
+       </LinearLayout>
+       <View
+           android:layout_width="1.5dp"
+           android:layout_height="20dp"
+           android:background="@color/profile_bg"
+           android:layout_marginTop="20dp"/>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="2"
+           android:layout_gravity="center"
+           android:gravity="center"
+          >
+           <ImageView
+               android:layout_width="34dp"
+               android:layout_height="34dp"
+               android:src="@drawable/profile"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:text="Track MyBuddy"/>
+       </LinearLayout>
+       <View
+           android:layout_width="1.5dp"
+           android:layout_height="20dp"
+           android:background="@color/profile_bg"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="14dp"/>
+       <LinearLayout
+           android:id="@+id/llv_buddies"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_weight="1"
+           android:layout_gravity="center"
+           android:gravity="center"
+           >
+           <ImageView
+               android:layout_width="34dp"
+               android:layout_height="34dp"
+               android:src="@drawable/profile"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:text="Buddies"/>
+       </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>
+
